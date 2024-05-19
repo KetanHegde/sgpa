@@ -8,128 +8,151 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
         input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button 
-        {
+        input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }
 
-        header
-        {
+        header {
             text-align: center;
             color: #fcbf44;
-            margin-top:20px;
+            margin-top: 20px;
         }
-        header h1,h2
-        {
+
+        header h1,
+        h2 {
             font-weight: 900;
             font-family: sans-serif;
         }
-        header h3
-        {
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        header h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             word-spacing: -5px;
         }
-        .flex
-        {
+
+        .flex {
             display: flex;
             flex-direction: row;
         }
 
-        .flex-container-1 .form-group
-        {
-            display:flex;
+        .flex-container-1 .form-group {
+            display: flex;
             justify-content: end;
         }
-        .flex-container-2 .form-group
-        {
-            display:flex;
+
+        .flex-container-2 .form-group {
+            display: flex;
             justify-content: start;
         }
 
-        
 
-        .flex-container-1,.flex-container-2
-        {
-            width:50%;
+
+        .flex-container-1,
+        .flex-container-2 {
+            width: 50%;
             display: flex;
             justify-content: center;
             flex-direction: column;
             padding: 3px 2vw;
         }
-        label,input
-        {
-            width:75%;
+
+        label,
+        input {
+            width: 75%;
         }
-        label
-        {
-            color:beige;
+
+        label {
+            color: beige;
             font-weight: bolder;
             font-family: arial;
         }
-        #dis
-        {
+
+        #dis {
             color: white;
         }
-        .form-control
-        {
+
+        .form-control {
             font-weight: 700;
             color: black;
         }
-        @media only screen and (max-width:500px)
-        {
-            header 
-            {
+
+        @media only screen and (max-width:740px) {
+
+            .flex-container-1 .form-group {
+                display: flex;
+                justify-content: center;
+            }
+
+            .flex-container-2 .form-group {
+                display: flex;
+                justify-content: center;
+            }
+
+            label,
+            input {
+                width: 90%;
+            }
+
+            label {
+                font-size: small;
+            }
+
+        }
+
+        @media only screen and (max-width:500px) {
+            header {
                 margin-top: 35px;
             }
-            .form-group
-            {
+
+            .form-group {
                 justify-content: center !important;
             }
         }
-        @media only screen and (max-width:390px)
-        {
-            label,input
-            {
-                width:100%;
+
+        @media only screen and (max-width:390px) {
+
+            label,
+            input {
+                width: 100%;
             }
-            header h1
-            {
+
+            header h1 {
                 font-size: xx-large;
             }
-            header h2 
-            {
+
+            header h2 {
                 font-size: x-large;
             }
-            header h3 
-            {
+
+            header h3 {
                 font-size: large;
             }
         }
-        @media only screen and (max-width:317px)
-        {
-            header h1
-            {
+
+        @media only screen and (max-width:317px) {
+            header h1 {
                 font-size: x-large;
             }
-            header h2 
-            {
+
+            header h2 {
                 font-size: large;
             }
-            header h3 
-            {
+
+            header h3 {
                 font-size: medium;
             }
         }
-        @media only print
-        {
-    body {transform: scale(2.2);
-    margin-top:65%;}
-    .btn
-    {
-        display:none;
-    }  
-            
+
+        @media only print {
+            body {
+                transform: scale(2.2);
+                margin-top: 65%;
+            }
+
+            .btn {
+                display: none;
+            }
+
         }
     </style>
 </head>
