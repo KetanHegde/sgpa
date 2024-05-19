@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      header {
+        text-align: center;
+        color: #fcbf44;
+        margin-top: 20px;
+      }
+      .flex {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .b-container {
+        width: 100%;
+      }
+
+      button {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        background-image: linear-gradient(to bottom right, #fcbf44, #805f1c);
+        margin: 2vh;
+        padding: 6vh 2vh;
+        border-radius: 5px;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: x-large;
+      }
+
+      button:hover {
+        transform: scale(1.03);
+        transition-duration: 1s;
+      }
+
+      .flex-container-1 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3px 1vw;
+      }
+      .flex-container-2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 3px 1vw;
+      }
+
+      header h1,
+      h2 {
+        font-weight: 900;
+        font-family: sans-serif;
+      }
+      @media only screen and (max-width: 500px) {
+        header {
+          margin-top: 35px;
+        }
+      }
+
+      @media only screen and (max-width: 390px) {
+        label,
+        input {
+          width: 100%;
+        }
+
+        header h1 {
+          font-size: xx-large;
+        }
+
+        header h2 {
+          font-size: x-large;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #0f1e26">
+    <header>
+      <h1>SGPA Calculator</h1>
+      <h2>21 CBCS SCHEME</h2>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2"
+          style="height: 75vh"
+          id="bc"
+        >
+          <div class="flex">
+            <div class="flex-container-1">
+              <div class="b-container">
+                <a href="https://ketanhegde.github.io/pcyclesgpa"
+                  ><button>P Cycle</button></a
+                >
+              </div>
+              <div class="b-container">
+                <a href="https://ketanhegde.github.io/sem3sgpa"
+                  ><button>Semester 3</button></a
+                >
+              </div>
+              <div class="b-container">
+                <a href="https://ketanhegde.github.io/sem5sgpa"
+                  ><button>Semester 5</button></a
+                >
+              </div>
+            </div>
+            <div class="flex-container-2">
+              <div class="b-container">
+                <a href="https://ketanhegde.github.io/ccyclesgpa">
+                  <button>C Cycle</button></a
+                >
+              </div>
+              <div class="b-container">
+                <a href="https://ketanhegde.github.io/sem4sgpa">
+                  <button>Semester 4</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
