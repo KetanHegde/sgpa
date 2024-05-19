@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem4SGPA</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            color: #fcbf44;
+            margin-top: 20px;
+        }
+
+        header h1,
+        h2 {
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+
+        header h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            word-spacing: -5px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-container-1 .form-group {
+            display: flex;
+            justify-content: end;
+        }
+
+        .flex-container-2 .form-group {
+            display: flex;
+            justify-content: start;
+        }
+
+
+
+        .flex-container-1,
+        .flex-container-2 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3px 2vw;
+        }
+
+        label,
+        input {
+            width: 75%;
+        }
+
+        label {
+            color: beige;
+            font-weight: bolder;
+            font-family: arial;
+        }
+
+        #dis {
+            color: white;
+        }
+
+        .form-control {
+            font-weight: 700;
+            color: black;
+        }
+
+        @media only screen and (max-width:740px) {
+
+            .flex-container-1 .form-group {
+                display: flex;
+                justify-content: center;
+            }
+
+            .flex-container-2 .form-group {
+                display: flex;
+                justify-content: center;
+            }
+
+            label,
+            input {
+                width: 90%;
+            }
+
+            label {
+                font-size: small;
+            }
+
+        }
+
+        @media only screen and (max-width:500px) {
+            header {
+                margin-top: 35px;
+            }
+
+            .form-group {
+                justify-content: center !important;
+            }
+        }
+
+        @media only screen and (max-width:390px) {
+
+            label,
+            input {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: xx-large;
+            }
+
+            header h2 {
+                font-size: x-large;
+            }
+
+            header h3 {
+                font-size: large;
+            }
+        }
+
+        @media only screen and (max-width:317px) {
+            header h1 {
+                font-size: x-large;
+            }
+
+            header h2 {
+                font-size: large;
+            }
+
+            header h3 {
+                font-size: medium;
+            }
+        }
+
+        @media only print {
+            body {
+                transform: scale(2.2);
+                margin-top: 65%;
+            }
+
+            .btn {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="background-color:#0f1e26">
+
+
+
+    <header>
+        <h1>SGPA Calculator</h1>
+        <h2>21 CBCS SCHEME</h2>
+        <h3>Semester : 4</h3>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2" style="height:75vh;" id="bc">
+
+                <form style="margin-top:5px;" action="main.php" onsubmit="return false">
+                    <div class="flex">
+                        <div class="flex-container-1">
+                            <div class="form-group">
+                                <label for="mat">21MATXX41
+                                    <input type="number" id="mat" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="xx382">21XXL48X/21XX48X
+                                    <input type="number" id="xx382" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="xx32">21XX42
+                                    <input type="number" id="xx32" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="xx33">21XX43
+                                    <input type="number" id="xx33" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="xx34">21XX44
+                                    <input type="number" id="xx34" class="form-control">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="flex-container-2">
+                            <div class="form-group">
+                                <label for="be45">21BE45
+                                    <input type="number" id="be45" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="scr">21XXL46
+                                    <input type="number" id="scr" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="xxx37">21XXX47
+                                    <input type="number" id="xxx37" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="uh49">21UH49
+                                    <input type="number" id="uh49" class="form-control">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="int49">21INT49
+                                    <input type="number" id="int49" class="form-control">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <button
+                            style="font-family: sans-serif;background-color: #0f1e26;color:aliceblue;border:2px solid white;border-radius: 5px;cursor: pointer;"
+                            class="btn btn-primary" onclick="calf()">CALCULATE</button>
+                    </center>
+                    <div style="margin-top:5px;font-size:40px;font-weight: bolder;">
+                        <center>
+                            <div style="text-align: center;" id="dis"></div>
+                        </center>
+                    </div>
+
+            </div>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    function calf() {
+        var mat = document.getElementById('mat').value;
+        var xx382 = document.getElementById('xx382').value;
+        var xx32 = document.getElementById('xx32').value;
+        var xx33 = document.getElementById('xx33').value;
+        var xx34 = document.getElementById('xx34').value;
+        var be45 = document.getElementById('be45').value;
+        var scr = document.getElementById('scr').value;
+        var xxx37 = document.getElementById('xxx37').value;
+        var uh49 = document.getElementById('uh49').value;
+        var int49 = document.getElementById('int49').value;
+
+        var matgp = calGP(mat);
+        var xx382gp = calGP(xx382);
+        var xx32gp = calGP(xx32);
+        var xx33gp = calGP(xx33);
+        var xx34gp = calGP(xx34);
+        var be45gp = calGP(be45);
+        var scrgp = calGP(scr);
+        var xxx37gp = calGP(xxx37);
+        var uh49gp = calGP(uh49);
+        var int49gp = calGP(int49);
+
+        var a = (matgp * 3) + (xx32gp * 4) + (xx33gp * 4) + (xx34gp * 3) + (be45gp * 2) + (scrgp) + (xxx37gp) + (xx382gp) + (int49gp * 2) + (uh49gp);
+        
+        var b = 22;
+       
+        var sgpa = a / b;
+        sgpa = parseFloat(sgpa).toFixed(2);
+        document.getElementById('dis').innerText = "SGPA : " + sgpa;
+    }
+    function calGP(a) {
+        if (a <= 100 && a >= 90)
+            return 10;
+        else if (a < 90 && a >= 80)
+            return 9;
+        else if (a < 80 && a >= 70)
+            return 8
+        else if (a < 70 && a >= 60)
+            return 7;
+        else if (a < 60 && a >= 55)
+            return 6;
+        else if (a < 55 && a >= 50)
+            return 5;
+        else if (a < 50 && a >= 40)
+            return 4;
+        else if (a < 40 && a >= 0)
+            return 0;
+    }
+
+    var t = document.querySelectorAll('input');
+    for (i = 0; i < 10; i++) {
+        t[i].setAttribute("min", 0);
+        t[i].setAttribute("max", 100);
+    }
+
+</script>
